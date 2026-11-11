@@ -1,0 +1,8 @@
+{
+  "name": "bra-web",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" }
+}

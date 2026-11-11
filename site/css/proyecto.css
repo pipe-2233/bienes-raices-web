@@ -1,0 +1,27 @@
+/* Página de cada proyecto (/proyectos/<id>) y enlaces del pie */
+.pp-body { background: var(--bg); }
+.pp-nav a { color: inherit; }
+.pp { padding-block: 18px 56px; }
+.pp-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); margin-bottom: 14px; }
+.pp-crumbs a { color: var(--navy); text-decoration: none; font-weight: 500; }
+.pp-crumbs a:hover { text-decoration: underline; }
+.pp-crumbs span:last-child { color: var(--fg); }
+.pp-card { background: var(--surface); border-radius: 18px; overflow: clip; box-shadow: var(--shadow-card); }
+.pp-card .d__media { top: var(--header-h); }
+.pp-card .d-title { font-size: clamp(26px, 3vw, 36px); }
+.pp-card .d-sec h2 { font-size: 17px; margin-bottom: 12px; }
+.pp-card .d-kicker { padding-right: 0; }
+.pp-card .gal__slide { aspect-ratio: 4 / 3.4; }
+.pp-tags { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.pp-tags li { background: #FBF3D0; color: #6B5300; border-radius: 999px; padding: 5px 11px; font-size: 13px; font-weight: 600; }
+.pp-more { margin-top: 44px; }
+.pp-more h2 { font-size: clamp(22px, 2.4vw, 28px); margin-bottom: 18px; }
+.footer__links { display: flex; flex-wrap: wrap; gap: 6px 18px; padding-block: 22px 16px; font-size: 13px; border-bottom: 1px solid rgba(255, 255, 255, .12); }
+.footer__links b { width: 100%; font-family: var(--font-display); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; opacity: .7; }
+.footer__links a { opacity: .8; text-decoration: none; }
+.footer__links a:hover { opacity: 1; text-decoration: underline; }
+@media (max-width: 960px) {
+  .pp-nav { display: none; }
+  .pp-card .d__media { top: auto; }
+  .pp { padding-top: 12px; }
+}
